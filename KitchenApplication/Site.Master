@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="KitchenApplication.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Charity Kitchen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Charity Kitchen</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="Login.aspx">Login</a></li>
+                <li><a href="Meals.aspx">Meals</a></li>
+                <li><a href="Orders.aspx">Orders</a></li>
+                <li><a href="Ingredients.aspx">Ingredients</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
